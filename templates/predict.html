@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Price</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Predict House Price</h1>
+
+<form action="/result" method="POST">
+
+<label>Area</label>
+<input type="number" name="area" required>
+
+<label>Bedrooms</label>
+<input type="number" name="bedrooms" required>
+
+<label>Bathrooms</label>
+<input type="number" name="bathrooms" required>
+
+<label>Age</label>
+<input type="number" name="age" required>
+
+<label>Location</label>
+<select name="location">
+    <option>Mumbai</option>
+    <option>Bangalore</option>
+    <option>Delhi</option>
+    <option>Hyderabad</option>
+</select>
+
+<label>House Type</label>
+<select name="type">
+    <option>Apartment</option>
+    <option>Villa</option>
+    <option>Bungalow</option>
+    <option>Penthouse</option>
+</select>
+
+<button type="submit">Predict Price</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
